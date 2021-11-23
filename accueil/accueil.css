@@ -1,0 +1,128 @@
+.icon{
+    vertical-align: -12px;
+}
+
+.bordure{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: -15px;
+    height: auto;
+    max-width: 100%;
+}
+
+header{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: -7px;
+    margin-left: 30px;
+}
+
+a.nav{
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgb(213, 213, 225);
+    font-size: 20px;
+    transition: color 0.3s linear, font-size 0.3s linear;
+}
+
+a.nav:hover{
+    color: rgb(255, 166, 31);
+    font-size: 21px;
+}
+
+h1.titre_accueil{
+    font-weight: bold;
+    font-size: 2.4vw;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(255, 166, 31);
+}
+
+p.description_accueil{
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+div.help-source{
+    margin: 150px 30px;
+    display: flex;
+}
+
+div.help{
+    flex-basis: 110%;
+}
+
+div.source{
+    flex-basis: 100%;
+}
+
+a.source{
+    color: rgb(213, 213, 225);
+    font-size: 1.3vw;
+    text-decoration: none;
+}
+
+h1.titre_help, h1.titre_source{
+    font-weight: 600;
+    font-size: 2vw;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(255, 166, 31);
+}
+
+p.description_help, p.description_source{
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 1.3vw;
+    text-align: center;
+}
+
+div.portrait{
+    text-align: center;
+    margin-top: 35vw;
+    font-size: 5.5vw;
+    color: rgb(255, 166, 31);
+}
+
+@media only screen and (orientation:portrait){
+    section.paysage{
+        display: none;
+    }
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        background: rgba(8,8,32,255);
+        background-image: url(../img/rotate.png);
+        background-position: center 60vw;
+        background-size: 70vw;
+        background-repeat: no-repeat;
+        color: rgb(213, 213, 225);
+    }
+    
+
+    div.portrait{
+        display: block;
+    }
+}
+
+@media only screen and (orientation:landscape){
+    section.paysage{
+        display: block;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        background-color: rgba(8,8,32,255);
+        background-image: url(../img/decor/decor6.png), url(../img/bg.png);
+        background-position: 65vw 45vw, right top;
+        background-size: 50vw, 60vw;
+        background-repeat: no-repeat;
+        color: rgb(213, 213, 225);
+    }    
+
+    div.portrait{
+        display: none;
+    }
+}

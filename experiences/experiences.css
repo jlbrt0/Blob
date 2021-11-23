@@ -1,0 +1,134 @@
+.icon{
+    vertical-align: -12px;
+}
+
+.bordure{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: -15px;
+    height: auto;
+    max-width: 100%;
+}
+
+header{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: -7px;
+    margin-left: 30px;
+}
+
+a.presentation{
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 41px;
+    text-decoration: none;
+    color: rgb(213, 213, 225);
+    font-size: 20px;
+    transition: color 0.3s linear, font-size 0.3s linear;
+}
+
+a.experiences{
+    color: rgb(255, 166, 31);
+    font-size: 22px;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+a.credits{
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 40px;
+    color: rgb(213, 213, 225);
+    font-size: 20px;
+    transition: color 0.3s linear, font-size 0.3s linear;
+}
+
+a.presentation:hover, a.credits:hover{
+    animation-name: nav;
+    animation-duration: 1s;
+    color: rgb(255, 166, 31);
+    font-size: 21px;
+}
+
+div.portrait{
+    text-align: center;
+    margin-top: 35vw;
+    font-size: 5.5vw;
+    color: rgb(255, 166, 31);
+}
+
+@media only screen and (orientation:portrait){
+    section.paysage{
+        display: none;
+    }
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        background: rgba(8,8,32,255);
+        background-image: url(../img/rotate.png);
+        background-position: center 60vw;
+        background-size: 70vw;
+        background-repeat: no-repeat;
+        color: rgb(213, 213, 225);
+    }
+    
+
+    div.portrait{
+        display: block;
+    }
+}
+
+@media only screen and (orientation:landscape){
+    section.paysage{
+        display: block;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        text-align: center;
+        background-color: rgba(8,8,32,255);
+        color: rgb(213, 213, 225);
+        background-image: url(../img/decor/decor6.png), url(../img/decor/decor2.png), url(../img/bg.png);
+        background-position: -29vw 24vw, 75vw 110vw, right top;
+        background-repeat: no-repeat;
+        background-size: 50vw, 60vw, 60vw;
+    }   
+
+    div.portrait{
+        display: none;
+    }
+}
+
+h1.titre_labyrinthe, h1.titre_points_cardinaux, h1.titre_obstacle, h1.titre_développement , h1.titre_résumé{
+    color: rgb(255, 166, 31);
+    font-weight: bold;
+    font-size: 2vw;
+    text-decoration: underline;
+    margin-left: 20px;
+    text-align: left;
+}
+
+h1.titre_intro{
+    color: rgb(255, 166, 31);
+    font-weight: bold;
+    font-size: 2vw;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p.description_résumé, p.description_labyrinthe, p.description_points_cardinaux ,p.description_obstacle, p.description_développement{
+    color: rgb(213, 213, 225);
+    font-size: 1.2vw;
+    line-height: 1.3vw;
+    text-align: left;
+    margin-left: 20px;
+}
+
+p.description_intro{
+    color: rgb(213, 213, 225);
+    font-size: 1.2vw;
+    line-height: 1.3vw;
+    text-align: center;
+}

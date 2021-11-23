@@ -1,0 +1,235 @@
+.icon{
+    vertical-align: -12px;
+}
+
+.bordure{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: -15px;
+    height: auto;
+    max-width: 100%;
+}
+
+header{
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: -7px;
+    margin-left: 30px;
+}
+
+a.presentation{
+    font-size: 22px;
+    margin-right: 40px;
+    margin-left: 41px;
+    color: rgb(255, 166, 31);
+    text-decoration: none;
+}
+
+a.experiences{
+    font-size: 20px;
+    margin-right: 40px;
+    text-decoration: none;
+    color: rgb(213, 213, 225);
+    font-size: 20px;
+    transition: color 0.3s linear, font-size 0.3s linear;
+}
+
+a.credits{
+    font-size: 20px;
+    margin-right: 40px;
+    color: rgb(213, 213, 225);
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s linear, font-size 0.3s linear;
+}
+
+a.experiences:hover, a.credits:hover{
+    animation-name: nav;
+    animation-duration: 1s;
+    color: rgb(255, 166, 31);
+    font-size: 21px;
+}
+
+div.presentation{
+    text-align: left;
+    margin-left: 25px;
+}
+
+h1.titre_presentation, h1.titre_identité, h1.titre_cycle, h1.titre_deplacement, h1.titre_apprentissage, h1.titre_autre{
+    color: rgb(255, 166, 31);
+    font-weight: bold;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+p.description_presentation, p.description_cycle, p.description2_cycle, p.description3_cycle, p.description_deplacement, p.description_apprentissage, p.description_autre{
+    color: rgb(213, 213, 225);
+    font-size: 1.2vw;
+    line-height: 1.3vw;
+    text-align: left;
+}
+
+div.img_presentation{
+    text-align: right;
+    position: relative;
+    right: 10%;
+    margin-top: -13vw;
+}
+
+img.blob1{
+    height: auto;
+    max-width: 15%;
+}
+
+div.identité{
+    text-align: center;
+    margin-top: 180px;
+    line-height: 2.5vw;
+}
+
+p.description_identité{
+    margin-top: 40px;
+    font-size: 1.8vw;
+    color: rgb(213, 213, 225);
+}
+
+div.img_identité{
+    text-align: center;
+    margin-top: -49.5vw;
+}
+
+img.img_identité{
+    height: auto;
+    max-width: 48%;
+}
+
+div.cycle-img2{
+    margin: -100px 20px;
+    display: flex;
+}
+
+div.cycle{
+    flex-basis: 170%;
+    text-align: left;
+}
+
+img.img_cycle{
+    height: auto;
+    max-width: 50%;
+}
+
+a.link_cycle{
+    font-size: 1vw;
+    color:rgb(213, 213, 225);
+    text-decoration: none;
+    margin-left: 10vw;
+}
+
+div.img2{
+    flex-basis: 50%;
+}
+
+img.img2_cycle{
+    height: auto;
+    margin-top: 14vw;
+    max-width: 150%;
+    margin-left: -26vw;
+}
+
+div.description2_cycle-description3_cycle{
+    margin: 60px 20px;
+    display: flex;
+}
+
+div.description2_cycle{
+    flex-basis: 20%;
+    text-align: left;
+}
+
+div.description3_cycle{
+    margin-left: 10vw;
+    flex-basis: 50%
+}
+
+div.deplacement, div.apprentissage, div.autre{
+    text-align: left;
+    margin-left: 20px;
+}
+
+div.robotique-gouts{
+    display: flex;
+    color: rgb(213, 213, 225);
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 3vw;
+    font-size: 1.2vw;
+}
+
+div.robotique{
+    flex-basis: 100%;
+    margin-right: 20px;
+}
+
+div.gouts{
+    flex-basis: 100%;
+}
+
+h1.titre_robotique, h1.titre_gouts{
+    font-size: 1.3vw;
+    text-decoration: underline;
+    line-height: 0.6vw;
+}
+
+img.img_robotique{
+    height: auto;
+    max-width: 60%; 
+}
+
+div.portrait{
+    text-align: center;
+    margin-top: 35vw;
+    font-size: 5.5vw;
+    color: rgb(255, 166, 31);
+}
+
+@media only screen and (orientation:portrait){
+    section.paysage{
+        display: none;
+    }
+    
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        background: rgba(8,8,32,255);
+        background-image: url(../img/rotate.png);
+        background-position: center 60vw;
+        background-size: 70vw;
+        background-repeat: no-repeat;
+        color: rgb(213, 213, 225);
+    }
+    
+
+    div.portrait{
+        display: block;
+    }
+}
+
+@media only screen and (orientation:landscape){
+    section.paysage{
+        display: block;
+    }
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        background-image: url(../img/decor/decor6.png), url(../img/decor/decor1.png),  url(../img/decor/decor3.png),  url(../img/decor/decor1.png), url(../img/bg.png);
+        background-position: 70vw 175vw, -500px 500px , 75vw -20vw, 80vw 50vw, right top;
+        background-size: 800px, 800px, 800px, 60vw;
+        background-repeat: no-repeat;
+        background-color: rgba(8,8,32,255);
+    }   
+
+    div.portrait{
+        display: none;
+    }
+}
